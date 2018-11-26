@@ -106,6 +106,7 @@
       <el-select-menu
         ref="popper"
         :append-to-body="popperAppendToBody"
+        :placement="popperPlacement"
         v-show="visible && emptyText !== false">
         <el-scrollbar
           tag="ul"
@@ -275,6 +276,7 @@
       allowCreate: Boolean,
       loading: Boolean,
       popperClass: String,
+      popperPlacement: String,
       remote: Boolean,
       loadingText: String,
       noMatchText: String,
